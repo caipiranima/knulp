@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Knulp</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+        
+    </head>
+    <body>
+        <main>
+            <div class="container">
+                <div class="title-bar">
+                    <div class="logo">
+                        <img src="img/knulp.svg" alt="" />
+                        <h3>Knulp</h3>
+                    </div>
+                    <input type="text" name="game-title" id="game-title" x-data x-model="$store.game.title">
+                    <button>Ferramentas</button>
+                    <button>Testar</button>
+                </div>
+                <!-- <div class="menu-bar">
+                    <span x-data x-text="$store.game.title"></span>
+                </div>
+                <div class="editor">
+                    <div class="cards-container">
+                        <button x-data x-text="$store.game.title"></button>
+                    </div>
+                </div> -->
+            </div>
+            <canvas id="sprite-editor"></canvas>
+        </main>
+        <script src="js/knulp/main.js"></script>
+    </body>
+</html>
